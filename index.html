@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>School Planner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>📘 School Planner</h1>
+    <p id="date"></p>
+  </header>
+
+  <main class="container">
+
+    <!-- Jadwal Sekolah -->
+    <section class="card">
+      <h2><i class="fa-solid fa-calendar-days"></i> Jadwal Sekolah</h2>
+
+      <div class="schedule">
+        <input type="text" id="day" placeholder="Hari (Senin)" />
+        <input type="text" id="subject" placeholder="Mata Pelajaran" />
+        <input type="text" id="time" placeholder="Jam (07.00 - 08.00)" />
+        <button onclick="addSchedule()">Tambah</button>
+      </div>
+
+      <ul id="scheduleList"></ul>
+    </section>
+
+    <!-- Rencana Harian -->
+    <section class="card">
+      <h2><i class="fa-solid fa-list-check"></i> Rencana Harian</h2>
+
+      <div class="todo">
+        <input type="text" id="taskInput" placeholder="Tambah tugas..." />
+        <button onclick="addTask()">Tambah</button>
+      </div>
+
+      <ul id="taskList"></ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 School Planner | Pelajar Produktif 🚀</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
